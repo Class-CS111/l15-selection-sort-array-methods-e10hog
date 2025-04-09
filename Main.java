@@ -14,6 +14,9 @@ public class Main
     ArrayMethods.reverse(numbers);
     System.out.println("reversed: " + ArrayMethods.arrayString(numbers));
 
+    System.out.println("index of min (starting at 0): " + ArrayMethods.indexOfMin(numbers, 0));
+    System.out.println("index of min (starting at 4): " + ArrayMethods.indexOfMin(numbers, 4));
+
     ArrayMethods.selectionSort(numbers);
     System.out.println("least to greatest: " + ArrayMethods.arrayString(numbers));
   }
