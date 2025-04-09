@@ -30,7 +30,11 @@ ArrayMethods
 
 public class ArrayMethods
 {
-  /**DESCRIPTION: */
+  /**
+   * Output a String of an array as a horizontal list, separated by commas and enclosed with curly brackets
+   * @param a input array
+   * @return formatted string of array content
+  */
   public static String arrayString(int[] a)
   {
     String output = "{";
@@ -42,7 +46,12 @@ public class ArrayMethods
     return output + "}";
   }
   
-  /**DESCRIPTION: */
+  /**
+   * Swap two elements in an int array given the indexes where the swap should occur
+   * @param array input array
+   * @param a index of element to swap to index b
+   * @param b index of element to swap to index a
+  */
   public static void swap(int[] array, int a, int b)
   {
     int aVal = array[a], bVal = array[b];
@@ -50,7 +59,12 @@ public class ArrayMethods
     array[b] = aVal;
   }
 	
-	/**DESCRIPTION: */
+	/**
+   * Finds the index of the minimum element in the array, starting from a specific index
+   * @param array input array
+   * @param startIndex starting index of the search
+   * @return index of the minimum element in the array
+  */
   public static int indexOfMin(int[] array, int startIndex)
   {
     int min = Integer.MAX_VALUE, index = 0;
@@ -63,7 +77,10 @@ public class ArrayMethods
     return index;
   }
 
-	/**DESCRIPTION: */
+	/**
+   * Reverses the order of a given array
+   * @param array input array
+  */
   public static void reverse(int[] array)
   {
     int times = (int) array.length / 2;
@@ -72,7 +89,10 @@ public class ArrayMethods
     }
   }
 
-	/**DESCRIPTION: */
+	/**
+   * Sorts a given array into ascending order
+   * @param array input array
+  */
   public static void selectionSort(int[] array)
   {
     for (int i = 0; i < array.length; i++) {
